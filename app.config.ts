@@ -7,8 +7,8 @@ export const AppConfig = {
       label: 'English',
     },
     {
-      id: 'ja',
-      label: 'Japanese',
+      id: 'vi',
+      label: 'Tiếng Việt',
     },
   ],
   defaultTheme: 'system', // 'light' | 'dark' | 'system'

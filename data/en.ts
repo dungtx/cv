@@ -1,129 +1,106 @@
 import { getAssetPath } from '@/app/lib/utils';
 import { Data } from '@/types/data';
-import { SiGithub, SiX } from '@icons-pack/react-simple-icons';
-import { Calendar, Mail, Send } from 'lucide-react';
+import { SiGithub } from '@icons-pack/react-simple-icons';
+import { Mail } from 'lucide-react';
 
 const data: Data = {
-  name: 'Taro Yamada',
-  lastUpdatedAt: new Date(),
+  name: 'Dzung Tran', // TODO: update to your full name
+  lastUpdatedAt: new Date('2026-05-04'),
   status: {
     color: 'active',
-    label: 'Available',
+    label: 'Open to opportunities',
   },
-  location: 'Seattle, WA',
-  bio: 'App Developer',
+  location: 'Ho Chi Minh City, Vietnam',
+  bio: 'Tech Lead · Full-Stack Engineer',
   summary:
-    'Lorem ipsum dolor sit amet consectetur adipisicing elit. A laborum unde, ducimus iusto ipsum repudiandae reprehenderit adipisci obcaecati quia consequuntur rem velit ab itaque saepe! Amet deserunt illo in nesciunt!',
+    'Tech Lead with 8+ years building and shipping scalable systems across government, fintech, social, and gaming domains. Strong in Java/Spring Boot, Python, and Node.js backends with hands-on experience in cloud infrastructure (AWS, Kubernetes), real-time architectures (WebSocket, Kafka), and cross-platform mobile (React Native, Flutter). Comfortable owning end-to-end delivery — from system design and stakeholder alignment to implementation and team mentorship.',
   avatarUrl: getAssetPath() + '/locale/en/profile.webp',
-  skills: ['Next.js', 'Tailwind CSS', 'TypeScript'],
+  skills: [
+    'Java', 'Spring Boot', 'Python', 'FastAPI', 'GeoDjango',
+    'NestJS', 'Node.js', 'React', 'React Native', 'Flutter', 'TypeScript',
+    'PostgreSQL', 'PostGIS', 'Oracle SQL',
+    'Apache Kafka', 'WebSocket', 'Odoo',
+    'AWS', 'Kubernetes', 'Docker', 'Jenkins', 'Terraform',
+  ],
   education: [
     {
-      school: 'Aurora Global University',
-      degree: `Master's in Environmental Science`,
-      start: '2019',
-      end: '2021',
-    },
-    {
-      school: 'Nova Arts and Technology College',
-      degree: `Bachelor's in Digital Media Design`,
-      start: '2014',
-      end: '2018',
+      school: 'Your University', // TODO: fill in
+      degree: 'Your Degree',
+      start: '20XX',
+      end: '20XX',
     },
   ],
   work: [
     {
-      company: 'BlueTech Co., Ltd.',
-      link: 'https://wmda.info',
-      badges: ['Remote'],
-      title: 'Lead Software Engineer',
-      start: '2020',
+      company: 'AHT Tech',
+      badges: ['Full-time'],
+      title: 'Tech Lead',
+      start: '2023',
       end: 'Present',
       description:
-        'Leading a team to develop new cloud-based solutions. Building efficient workflows and designing and implementing scalable applications using AWS. Technologies: Python, Django, React, AWS',
+        'Led solution architecture across four concurrent products: a large-scale government digital platform (Java Spring Boot, Kafka, Dremio, Kubernetes, Oracle SQL); a multi-service social location app with real-time geospatial features (Python/GeoDjango, NestJS, React Native, PostGIS, AI moderation); a customised Odoo CRM/e-commerce backend; and a high-concurrency real-time investment platform (NestJS, WebSocket, Blockchain, AWS, Terraform). Drove technical decisions across squads, managed CI/CD via Jenkins and Kubernetes, mentored engineers through code reviews and workshops, and led all English-language communication with international stakeholders.',
     },
     {
-      company: 'Green Data Co., Ltd.',
-      link: 'https://wmda.info',
-      badges: ['Remote'],
-      title: 'Data Scientist',
-      start: '2018',
-      end: '2020',
-      description: `Contributing to the development of analytical tools that leverage big data to aid decision-making. Utilizing machine learning and data visualization to foster clients' business growth. Technologies: Python, R, SQL, Tableau`,
-    },
-    {
-      company: 'Cybersecurity Solutions',
-      link: 'https://wmda.info',
-      badges: [],
-      title: 'Senior Security Engineer',
-      start: '2017',
-      end: '2018',
+      company: 'Antsoft',
+      badges: ['Outsourcing'],
+      title: 'Senior Software Engineer → Tech Lead',
+      start: '2020',
+      end: '2023',
       description:
-        'Developing and implementing strategies to strengthen corporate cybersecurity. Involved in the development of cutting-edge threat detection tools to secure client data. Technologies: Java, Python, Linux, Network Security',
+        'Delivered seven outsourced contracts across diverse domains: Spring Boot microservices for a Japanese client with direct cross-cultural technical communication; AWS cloud infrastructure and Jenkins CI/CD pipelines for GEM Vietnam; cross-platform mobile app with Flutter, iOS native modules, Firebase (Auth, Firestore, Push), and LINE SDK; Netflix OSS microservice architecture (Eureka, Spring Cloud Gateway, PostgreSQL with DBA-optimised queries); full backend for a SIM management platform including end-to-end payment processing; a real estate listing app (Flutter + Spring Boot); and a high-risk legacy migration from Spring Framework 2/Java 7 to Spring Boot 3/Java 11 with zero data loss or unplanned downtime.',
+    },
+    {
+      company: 'Gameloft',
+      badges: [],
+      title: 'Software Engineer',
+      start: '2017',
+      end: '2020',
+      description:
+        "Built rapid game prototypes in Unity (C#) and Unreal Engine (C++) within a fast-paced creative lab, iterating on gameplay mechanics and shipping playable builds each sprint. Designed and maintained the studio's Jenkins CI pipeline for multi-platform builds across a complex build matrix, significantly reducing manual build time. Maintained and extended live features for March of Empires (large-scale mobile strategy title), resolving Android-specific bugs across rendering, memory management, and cross-device compatibility within a proprietary engine codebase.",
+    },
+    {
+      company: 'NextTech',
+      badges: [],
+      title: 'Junior Full-Stack Developer',
+      start: '2017',
+      end: 'Mid 2017',
+      description:
+        'Contributed to a full-stack e-commerce platform using Java Spring Boot REST APIs and AngularJS. Owned the customer-facing storefront UI and multiple admin modules covering product management, order processing, and back-office tooling.',
     },
   ],
   contacts: [
     {
-      label: 'example@example.com',
-      href: 'mailto:example@example.com',
+      label: 'dungtx32@gmail.com',
+      href: 'mailto:dungtx32@gmail.com',
       icon: Mail,
       toolbar: true,
-    },
-    {
-      label: 'Send DM',
-      href: 'https://twitter.com/WMDA_office',
-      icon: SiX,
-      toolbar: true,
-    },
-    {
-      label: 'Meeting',
-      href: 'https://cal.com',
-      icon: Calendar,
-    },
-    {
-      label: 'Form',
-      href: 'https://tally.so',
-      icon: Send,
     },
   ],
   projects: [
     {
-      title: 'EcoTrack',
-      techStack: [
-        'Side Project',
-        'JavaScript',
-        'React',
-        'Node.js',
-        'MongoDB',
-        'REST API',
-      ],
+      title: 'VPHC – Government Digital Platform',
+      techStack: ['Java Spring Boot', 'Apache Kafka', 'Dremio', 'Kubernetes', 'Oracle SQL', 'Jenkins'],
       description:
-        'An environmental impact tracking app for individuals and small businesses',
-      link: {
-        label: 'ecotrack.app',
-        href: 'https://wmda.info',
-      },
+        'Large-scale government public-sector platform with a real-time data warehouse pipeline (Kafka + Dremio) and on-premises Kubernetes deployment.',
     },
     {
-      title: 'CodeCollab',
-      techStack: ['Side Project', 'Python', 'Flask', 'WebSocket', 'Docker'],
+      title: 'Versmap – Social Location Platform',
+      techStack: ['Spring Boot', 'Python', 'FastAPI', 'GeoDjango', 'NestJS', 'React Native', 'PostGIS'],
       description:
-        'A real-time collaborative coding platform for remote pair programming',
-      link: {
-        label: 'codecollab.io',
-        href: 'https://wmda.info',
-      },
+        'Multi-service social platform for real-time friend tracking and geo-tagged POI discovery, with WebSocket live-location, chat, and AI content moderation.',
+    },
+    {
+      title: 'FSM – Real-Time Investment Platform',
+      techStack: ['NestJS', 'WebSocket', 'React SSR', 'Blockchain', 'AWS', 'Terraform'],
+      description:
+        'High-concurrency investment platform with persistent WebSocket feeds, Nest Workers for background job processing, and on-chain smart contract integration.',
     },
   ],
   links: [
     {
-      label: 'XXX',
-      href: 'https://twitter.com/WMDA_office',
+      label: 'GitHub',
+      href: 'https://github.com/dungtx/cv',
       icon: SiGithub,
-    },
-    {
-      label: 'XXX',
-      href: 'https://twitter.com/WMDA_office',
-      icon: SiX,
     },
   ],
 };
