@@ -24,10 +24,10 @@ const data: Data = {
   ],
   education: [
     {
-      school: 'Your University', // TODO: fill in
-      degree: 'Your Degree',
-      start: '20XX',
-      end: '20XX',
+      school: 'Hanoi University',
+      degree: 'Bachelor of Science',
+      start: '2013',
+      end: '2017',
     },
   ],
   work: [
@@ -99,7 +99,7 @@ const data: Data = {
   links: [
     {
       label: 'GitHub',
-      href: 'https://github.com/dungtx/cv',
+      href: 'https://dungtx.github.io/cv/',
       icon: SiGithub,
     },
   ],

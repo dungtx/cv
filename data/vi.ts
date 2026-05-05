@@ -25,10 +25,10 @@ const data: Data = {
   ],
   education: [
     {
-      school: 'Tên trường đại học', // TODO: điền thông tin
-      degree: 'Tên bằng cấp',
-      start: '20XX',
-      end: '20XX',
+      school: 'Đại học Hà Nội',
+      degree: 'Cử nhân',
+      start: '2013',
+      end: '2017',
     },
   ],
   work: [
@@ -100,7 +100,7 @@ const data: Data = {
   links: [
     {
       label: 'GitHub',
-      href: 'https://github.com/dungtx/cv',
+      href: 'https://dungtx.github.io/cv/',
       icon: SiGithub,
     },
   ],
