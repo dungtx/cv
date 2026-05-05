@@ -39,8 +39,11 @@ const data: Data = {
       title: 'リードソフトウェアエンジニア',
       start: '2020',
       end: '現在',
-      description:
-        'チームを率いて新しいクラウドベースのソリューションを開発。効率的なワークフローを構築し、AWSを使用したスケーラブルなアプリケーションの設計と実装を行う。技術: Python, Django, React, AWS',
+      description: [
+        'チームを率いて新しいクラウドベースのソリューションを開発。',
+        '効率的なワークフローを構築し、AWSを使用したスケーラブルなアプリケーションの設計と実装を行う。',
+        '技術: Python, Django, React, AWS',
+      ],
     },
     {
       company: 'グリーンデータ株式会社',
@@ -49,8 +52,11 @@ const data: Data = {
       title: 'データサイエンティスト',
       start: '2020',
       end: '2019',
-      description:
-        'ビッグデータを活用して意思決定を支援する分析ツールの開発に貢献。機械学習とデータビジュアライゼーションを駆使して、顧客のビジネス成長を促進。技術: Python, R, SQL, Tableau',
+      description: [
+        'ビッグデータを活用して意思決定を支援する分析ツールの開発に貢献。',
+        '機械学習とデータビジュアライゼーションを駆使して、顧客のビジネス成長を促進。',
+        '技術: Python, R, SQL, Tableau',
+      ],
     },
     {
       company: 'サイバーセキュリティソリューションズ',
@@ -59,8 +65,11 @@ const data: Data = {
       title: 'シニアセキュリティエンジニア',
       start: '2018',
       end: '2017',
-      description:
-        '企業のサイバーセキュリティを強化するための戦略の立案と実装。最先端の脅威検出ツールの開発に携わり、クライアントのデータ保護を確保。技術: Java, Python, Linux, ネットワークセキュリティ',
+      description: [
+        '企業のサイバーセキュリティを強化するための戦略の立案と実装。',
+        '最先端の脅威検出ツールの開発に携わり、クライアントのデータ保護を確保。',
+        '技術: Java, Python, Linux, ネットワークセキュリティ',
+      ],
     },
   ],
   contacts: [
@@ -110,8 +119,9 @@ const data: Data = {
         'MongoDB',
         'REST API',
       ],
-      description:
+      description: [
         'An environmental impact tracking app for individuals and small businesses',
+      ],
       link: {
         label: 'ecotrack.app',
         href: 'https://www.jmdp.or.jp',
@@ -120,8 +130,9 @@ const data: Data = {
     {
       title: 'CodeCollab',
       techStack: ['Side Project', 'Python', 'Flask', 'WebSocket', 'Docker'],
-      description:
+      description: [
         'A real-time collaborative coding platform for remote pair programming',
+      ],
       link: {
         label: 'codecollab.io',
         href: 'https://www.jmdp.or.jp',
