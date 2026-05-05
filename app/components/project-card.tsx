@@ -10,7 +10,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 interface Props {
   title: string;
-  description: string;
+  description: string[];
   techStack: readonly string[];
   link?: {
     href: string;
@@ -44,7 +44,13 @@ export function ProjectCard({ title, description, techStack, link }: Props) {
                 .replace('/', '')}
             </div>
           )}
-          <CardDescription className="text-sm">{description}</CardDescription>
+          <CardDescription className="text-sm">
+            <ul className="list-disc list-outside ml-4 space-y-1">
+              {description.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </CardDescription>
         </div>
       </CardHeader>
       {techStack.length > 0 && (

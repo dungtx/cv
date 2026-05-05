@@ -4,7 +4,7 @@ import { LucideIcon } from 'lucide-react';
 export type Project = {
   title: string;
   techStack: string[];
-  description: string;
+  description: string[];
   link?: {
     label: string;
     href: string;
@@ -25,7 +25,7 @@ export type Work = {
   title: string;
   start: string;
   end: string;
-  description: string;
+  description: string[];
 };
 
 export type Contact = {

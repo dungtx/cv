@@ -109,7 +109,11 @@ export default async function Home({
                 )}
               </CardHeader>
               <CardContent className="text-sm text-muted-foreground">
-                {work.description}
+                <ul className="list-disc list-outside ml-4 space-y-1">
+                  {work.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
               </CardContent>
             </Card>
           );

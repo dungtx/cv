@@ -35,7 +35,7 @@ const data: Data = {
       title: '',
       start: '',
       end: '',
-      description: '',
+      description: [],
     },
     {
       company: '',
@@ -44,7 +44,7 @@ const data: Data = {
       title: '',
       start: '',
       end: '',
-      description: '',
+      description: [],
     },
     {
       company: '',
@@ -53,7 +53,7 @@ const data: Data = {
       title: '',
       start: '',
       end: '',
-      description: '',
+      description: [],
     },
   ],
   contacts: [
@@ -68,7 +68,7 @@ const data: Data = {
     {
       title: '',
       techStack: [],
-      description: '',
+      description: [],
       link: {
         label: '',
         href: '',
